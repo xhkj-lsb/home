@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星河科技 - 主页</title>
+  <link rel="icon" href="http://xhkj.tttttttttt.top/wp-content/uploads/2024/08/114514-2-150x150.jpg" type="image/jpeg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #007BFF;
+      margin: 0;
+      padding: 0;
+      color: white;
+      height: 2000px; /* 设置一个较大的高度以触发滚动条 */
+    }
+
+    /* 导航栏样式 */
+    nav {
+      background-color: white;
+      padding: 10px 0;
+      border-radius: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100; /* 确保导航栏在其他元素之上 */
+    }
+
+    nav a {
+      color: #007BFF;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+    nav img {
+      height: 30px; /* 根据需要调整logo高度 */
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    h1 {
+      text-align: center;
+      display: none;
+    }
+
+    /* 页脚样式 */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: -200px;
+      width: 100%;
+      transition: bottom 0.5s ease;
+    }
+
+    footer button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* 自定义滚动条样式（用于Chrome浏览器） */
+    ::-webkit-scrollbar {
+      width: 10px; /* 滚动条宽度 */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* 滚动条轨道背景色 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888; /* 滚动条滑块颜色 */
+      border-radius: 5px; /* 滑块圆角 */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; /* 鼠标悬停时滑块颜色 */
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="http://xhkj.tttttttttt.top/wp-content/uploads/2024/08/retouch_2024072914010696-1-2.png" alt="logo">
+    <a href="#">主页</a>
+  </nav>
+  <script>
+    window.addEventListener('scroll', function () {
+      var footer = document.getElementsByTagName('footer')[0];
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      var windowHeight = window.innerHeight;
+      var documentHeight = document.documentElement.scrollHeight;
+      if (scrollTop + windowHeight >= documentHeight) {
+        footer.style.bottom = '0';
+      } else {
+        footer.style.bottom = '-200px';
+      }
+    });
+  </script>
+  <footer>
+    <button onclick="window.open('http://xhkj.tttttttttt.top/wp-content/uploads/2024/08/Screenshot_2024/07/30/104312/com.tencent.mm_.png', '_blank')">微信</button>
+    <button onclick="良心云">QQ</button>
+    <button onclick="window.open('https://www.xiaohongshu.com用户配置文件66c33fbe000000000d024289', '_blank')">小红书</button>
+    <p>电话：15918732996    QQ：1731436631    邮箱：1731436631@qq.com</p>
+    <p>© 2024 星河科技 | 版权所有</p>
+  </footer>
+</body>
+
+</html>
